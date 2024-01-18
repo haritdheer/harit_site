@@ -6,10 +6,10 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 const NavbarRight = () => {
   const [compos, setCompos] = useState([
-    { id: 1, name: "About", utm: "about" },
-    { id: 2, name: "Experience", utm: "experience" },
-    { id: 3, name: "Education", utm: "education" },
-    { id: 4, name: "Contact", utm: "contact" },
+    { id: 1, name: "About", utm: "/about" },
+    { id: 2, name: "Experience", utm: "/experience" },
+    { id: 3, name: "Education", utm: "/education" },
+    { id: 4, name: "Contact", utm: "/contact" },
   ]);
 
   const navigate = useNavigate();
@@ -20,11 +20,11 @@ const NavbarRight = () => {
       {compos.map((val, key) => {
         return (
           <CustomNavigation
-            href={`#${val.utm}`}
+            href={val?.utm}
             className={"hover:bottom-0 flex gap-x-2"}
             key={key}
           >
-            <span className="text-cyan-400">{val.id}.</span> {val.name}
+            <span className="text-cyan-400">{val.id}.</span> {val?.name}
           </CustomNavigation>
         );
       })}
