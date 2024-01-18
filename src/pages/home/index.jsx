@@ -1,10 +1,11 @@
 import React from "react";
 import ProfileLayout from "../../layouts/profile";
+import Homepage from "../../components/home_page";
 
 const HomePage = () => {
   return (
     <ProfileLayout>
-      <h1>This is profile layout.</h1>
+      <Homepage />
     </ProfileLayout>
   );
 };
