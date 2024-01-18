@@ -8,7 +8,7 @@ const HomepageLeftRightContainer = ({ children, className }) => {
     <CustomContainer
       className={classNames(
         className,
-        "h-full flex flex-col gap-y-7 justify-end items-center"
+        "h-full flex flex-col justify-end items-center"
       )}
     >
       {children}

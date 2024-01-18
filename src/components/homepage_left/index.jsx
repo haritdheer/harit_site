@@ -4,7 +4,7 @@ import HomepageLeftRightContainer from "../../containers/homepageLeftRightContai
 
 const HomepageLeft = () => {
   return (
-    <HomepageLeftRightContainer>
+    <HomepageLeftRightContainer className={"gap-y-7"}>
       <SocialIcons />
     </HomepageLeftRightContainer>
   );
