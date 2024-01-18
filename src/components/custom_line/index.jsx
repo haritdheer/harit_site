@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import classNames from "classnames";
 
-const VerticalLine = ({ width, height, color }) => {
+const CustomLine = ({ width, height, color }) => {
   const [dynamicStyles, setDynamicStyles] = useState({
     width: "100px",
     height: "100px",
@@ -18,4 +18,4 @@ const VerticalLine = ({ width, height, color }) => {
   return <div className="dynamic-height" style={dynamicStyles}></div>;
 };
 
-export default VerticalLine;
+export default CustomLine;

@@ -6,10 +6,10 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 const NavbarRight = () => {
   const [compos, setCompos] = useState([
-    { id: 1, name: "About", utm: "/about" },
-    { id: 2, name: "Experience", utm: "/experience" },
-    { id: 3, name: "Education", utm: "/education" },
-    { id: 4, name: "Contact", utm: "/contact" },
+    { id: "01", name: "About", utm: "/about" },
+    { id: "02", name: "Experience", utm: "/experience" },
+    { id: "03", name: "Education", utm: "/education" },
+    { id: "04", name: "Contact", utm: "/contact" },
   ]);
 
   const navigate = useNavigate();

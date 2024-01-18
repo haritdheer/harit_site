@@ -1,6 +1,6 @@
 import React from "react";
 import CustomContainer from "./customContainer";
-import VerticalLine from "../components/vertical_line";
+import CustomLine from "../components/custom_line";
 import classNames from "classnames";
 
 const HomepageLeftRightContainer = ({ children, className }) => {
@@ -12,7 +12,7 @@ const HomepageLeftRightContainer = ({ children, className }) => {
       )}
     >
       {children}
-      <VerticalLine width={2} height={100} color="#FFFFFF" />
+      <CustomLine width={2} height={100} color="#FFFFFF" />
     </CustomContainer>
   );
 };

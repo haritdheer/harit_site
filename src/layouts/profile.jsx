@@ -11,13 +11,13 @@ const ProfileLayout = ({ children }) => {
       <ProfileNavbar className={"h-1/8"} />
       <CustomContainer className="flex text-white h-7/8">
         <CustomAlert
-          message={"This website is under development."}
+          message={"This website is under development. - Kamal S."}
           type={"danger"}
         />
         <CustomContainer className="w-1/8 overflow-hidden">
           <HomepageLeft />
         </CustomContainer>
-        <CustomContainer className="w-7/8 overflow-auto">
+        <CustomContainer className="w-7/8 p-24 overflow-auto">
           {children}
         </CustomContainer>
         <CustomContainer className="w-1/8 overflow-hidden">

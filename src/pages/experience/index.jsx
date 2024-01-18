@@ -1,8 +1,13 @@
 import React from "react";
 import ProfileLayout from "../../layouts/profile";
+import Experiencepage from "../../components/experience_page";
 
 const ExperiencePage = () => {
-  return <ProfileLayout>Experience Page</ProfileLayout>;
+  return (
+    <ProfileLayout>
+      <Experiencepage />
+    </ProfileLayout>
+  );
 };
 
 export default ExperiencePage;
