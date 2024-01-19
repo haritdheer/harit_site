@@ -17,7 +17,7 @@ const CustomAlert = ({ message, type, onClose }) => {
     <div className={alertClasses}>
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <p>{message}</p>
+          <span>{message}</span>
           {/* TODO: Remaining to configure close button */}
           {/* <button
             className="text-white focus:outline-none"

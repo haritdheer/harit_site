@@ -29,7 +29,7 @@ const Homepage = ({ className }) => {
         <CustomTypewriter cursor={true} loop={true} words={data?.designation} />
         .
       </h2>
-      <p className="text-gray-300 w-1/2 text-pretty">{data?.bio}</p>
+      <p className="w-1/2 text-pretty">{data?.bio}</p>
       <CustomButton
         onClick={() => {
           navigate("/about");
