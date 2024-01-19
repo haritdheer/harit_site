@@ -6,7 +6,7 @@ import "./style.css";
 const AboutPageRight = () => {
   return (
     <CustomContainer className={"flex w-1/2 justify-center items-start"}>
-      <img src={Photo} />
+      <img src={Photo} className="wrapper" />
       {/* <div className="wrapper_outline"></div> */}
     </CustomContainer>
   );
