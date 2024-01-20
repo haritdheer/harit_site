@@ -17,7 +17,9 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.21.2",
-    "react-simple-typewriter": "^5.0.1"
+    "react-simple-typewriter": "^5.0.1",
+    "react-tsparticles": "^1.30.0",
+    "tsparticles": "^1.30.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

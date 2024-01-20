@@ -1,4 +1,5 @@
 // DynamicAlert.js
+import classNames from "classnames";
 import React, { useState } from "react";
 
 const CustomAlert = ({ message, type, onClose }) => {
@@ -14,7 +15,7 @@ const CustomAlert = ({ message, type, onClose }) => {
   } ${showAlert ? "block" : "hidden"}`;
 
   return (
-    <div className={alertClasses}>
+    <div className={classNames(alertClasses, "z-50")}>
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <span>{message}</span>
