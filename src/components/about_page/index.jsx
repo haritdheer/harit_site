@@ -9,7 +9,7 @@ const Aboutpage = () => {
     <PageHeader heading={"About Me"} headingId="01">
       <CustomContainer className={"flex"}>
         <AboutPageLeft />
-        <AboutPageRight />
+        {/* <AboutPageRight /> */}
       </CustomContainer>
     </PageHeader>
   );

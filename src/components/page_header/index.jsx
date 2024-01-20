@@ -6,6 +6,7 @@ import CustomLine from "../custom_line";
 const PageHeader = ({
   children,
   className,
+  childrenClass,
   heading = "No heading",
   headingId = "00",
 }) => {
@@ -18,7 +19,7 @@ const PageHeader = ({
         <span className="font-bold text-3xl">{heading}</span>
         <CustomLine height={"2"} width={"300"} color={"#253854"} />
       </h3>
-      <CustomContainer className={""}>{children}</CustomContainer>
+      <CustomContainer className={childrenClass}>{children}</CustomContainer>
     </CustomContainer>
   );
 };

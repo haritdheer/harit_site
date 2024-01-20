@@ -5,6 +5,7 @@ import HomepageRight from "../components/homepage_right";
 import HomepageLeft from "../components/homepage_left";
 import CustomAlert from "../components/custom_alert/customAlert";
 import ParticleBackground from "../components/particle_component/particle_background";
+import CustomConsole from "../components/custom_console";
 
 const ProfileLayout = ({ children }) => {
   return (
@@ -26,6 +27,7 @@ const ProfileLayout = ({ children }) => {
           <HomepageRight />
         </CustomContainer>
       </CustomContainer>
+      <CustomConsole />
     </CustomContainer>
   );
 };
