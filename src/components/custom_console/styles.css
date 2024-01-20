@@ -10,6 +10,7 @@
     color: white;
     transform: translateY(100%);
     transition: transform 0.3s ease;
+    z-index: 300;
 }
 
 .dark-console.visible {
@@ -24,6 +25,8 @@
     cursor: pointer;
     position: absolute;
     bottom: 0;
+    right: 50%;
+    z-index: 200;
 }
 
 .console-content {
