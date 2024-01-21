@@ -15,7 +15,7 @@ const Homepage = ({ className }) => {
       "App Developer",
       "Blockchain Developer",
     ],
-    bio: "Hi there! I'm a Full Stack Developer with a passion for creating innovative solutions to complex problems. I've honed my skills in both front-end and back-end development, and have worked with a range of technologies of various domains.",
+    bio: "Hi there! I'm a Full Stack Developer and a Data Science Enthusiast with a passion for creating innovative solutions to complex problems. I've honed my skills in both front-end and back-end development, and have worked with a range of technologies of various domains.",
   });
   const navigate = useNavigate();
   return (
