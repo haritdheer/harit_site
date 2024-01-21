@@ -15,9 +15,9 @@ const CustomAlert = ({ message, type, onClose }) => {
   } ${showAlert ? "block" : "hidden"}`;
 
   return (
-    <div className={classNames(alertClasses, "z-50")}>
+    <div className={classNames(alertClasses, "z-40")}>
       <div className="container mx-auto">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between text-xs md:text-base">
           <span>{message}</span>
           {/* TODO: Remaining to configure close button */}
           {/* <button

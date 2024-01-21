@@ -22,14 +22,16 @@ const Homepage = ({ className }) => {
     <CustomContainer
       className={classNames(className, "flex flex-col gap-y-5 tracking-widest")}
     >
-      <span className="text-cyan-400">Hi, my name is</span>
-      <h1 className="text-7xl font-semibold">{data?.name}.</h1>
-      <h2 className="text-7xl font-semibold text-gray-300">
+      <span className="text-sm md:text-md text-cyan-400">Hi, my name is</span>
+      <h1 className="text-3xl md:text-7xl font-semibold">{data?.name}.</h1>
+      <h2 className="text-3xl md:text-7xl font-semibold text-gray-300">
         I am{" "}
         <CustomTypewriter cursor={true} loop={true} words={data?.designation} />
         .
       </h2>
-      <p className="w-1/2 text-pretty">{data?.bio}</p>
+      <p className="w-full text-sm md:text-base md:w-1/2 text-pretty">
+        {data?.bio}
+      </p>
       <CustomButton
         onClick={() => {
           navigate("/about");

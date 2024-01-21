@@ -11,21 +11,19 @@ const ProfileLayout = ({ children }) => {
   return (
     <CustomContainer className="h-screen">
       <ParticleBackground />
-      <ProfileNavbar className={"h-1/8"} />
+      <ProfileNavbar className={"h-1/8 z-50"} />
       <CustomContainer className="flex text-white h-7/8">
         <CustomAlert
-          message={
-            "This website is currently under development for responsiveness. - Kamal S."
-          }
+          message={"This website is currently under development."}
           type={"danger"}
         />
-        <CustomContainer className="w-1/8 overflow-hidden z-10">
+        <CustomContainer className="hidden md:block w-1/8 overflow-hidden z-10">
           <HomepageLeft />
         </CustomContainer>
-        <CustomContainer className="w-7/8 p-24 overflow-auto z-10">
+        <CustomContainer className="w-full p-7 pt-16 md:w-7/8 md:p-24 overflow-auto z-10">
           {children}
         </CustomContainer>
-        <CustomContainer className="w-1/8 overflow-hidden z-10">
+        <CustomContainer className="hidden md:block w-1/8 overflow-hidden z-10">
           <HomepageRight />
         </CustomContainer>
       </CustomContainer>

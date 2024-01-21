@@ -9,7 +9,7 @@ const ProfileNavbar = ({ className }) => {
     <CustomContainer
       className={classNames(
         className,
-        "sticky top-0 px-12 flex items-center justify-between text-white bg-sky-950"
+        "sticky top-0 px-4 md:px-12 flex items-center justify-between text-white bg-sky-950"
       )}
     >
       <NavbarLeft />
