@@ -40,7 +40,7 @@ const CustomTabVertical = ({ tabs = [] }) => {
         </h3>
         <p className="mb-2">{tabs[activeTab].duration}</p>
         {/* <p dangerouslySetInnerHTML={{ __html: tabs[activeTab].content }}></p> */}
-        <p>{tabs[activeTab].content}</p>
+        {tabs[activeTab].content}
       </div>
     </div>
   );

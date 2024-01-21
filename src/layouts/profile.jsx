@@ -9,7 +9,7 @@ import CustomConsole from "../components/custom_console";
 
 const ProfileLayout = ({ children }) => {
   return (
-    <CustomContainer className="h-screen">
+    <CustomContainer className="h-screen w-screen">
       <ParticleBackground />
       <ProfileNavbar className={"h-1/8 z-50"} />
       <CustomContainer className="flex text-white h-7/8">
@@ -17,13 +17,13 @@ const ProfileLayout = ({ children }) => {
           message={"This website is currently under development."}
           type={"danger"}
         />
-        <CustomContainer className="hidden md:block w-1/8 overflow-hidden z-10">
+        <CustomContainer className="hidden md:block md:w-1/8 overflow-hidden z-10">
           <HomepageLeft />
         </CustomContainer>
         <CustomContainer className="w-full p-7 pt-16 md:w-7/8 md:p-24 overflow-auto z-10">
           {children}
         </CustomContainer>
-        <CustomContainer className="hidden md:block w-1/8 overflow-hidden z-10">
+        <CustomContainer className="hidden md:block md:w-1/8 overflow-hidden z-10">
           <HomepageRight />
         </CustomContainer>
       </CustomContainer>
