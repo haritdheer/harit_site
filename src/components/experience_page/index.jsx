@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PageHeader from "../page_header";
 import CustomTabVertical from "../custom_tab/custom_tab_vertical";
+import CustomList from "../custom_list";
 
 const Experiencepage = () => {
   const [data, setData] = useState([
@@ -10,8 +11,16 @@ const Experiencepage = () => {
       at: "Modgenics, Hyderabad",
       atUrl: "https://www.modgenics.co",
       duration: "Feb 2023 - Sept 2023",
-      content:
-        "<ol><li>Responsibility-1</li><li>Responsibility-2</li><li>Responsibility-3</li><li>Responsibility-4</li></ol>",
+      content: (
+        <CustomList
+          items={[
+            "Translating Wireframes and PSD Designs into functional web apps using MERN / Mysql.",
+            "Binding of UI elements to JavaScript object models.",
+            "Creating RESTful services with Node.js.",
+            "Create Unit and Integration tests to ensure the QOC.",
+          ]}
+        />
+      ),
     },
     {
       id: 1,
@@ -19,8 +28,15 @@ const Experiencepage = () => {
       at: "Blackcoffer, New Delhi",
       atUrl: "https://blackcoffer.com",
       duration: "July 2022 - Dec 2022",
-      content:
-        "<ul><li>Responsibility-1</li><li>Responsibility-2</li><li>Responsibility-3</li><li>Responsibility-4</li></ul>",
+      content: (
+        <CustomList
+          items={[
+            "Working on MERN Stack as Full Time Intern.",
+            "Have done front-end work on various client projects.",
+            "Currently working on designing backend API’s for different projects.",
+          ]}
+        />
+      ),
     },
     {
       id: 2,
@@ -28,8 +44,15 @@ const Experiencepage = () => {
       at: "DevTown, Bangalore",
       atUrl: "https://devtown.in",
       duration: "Dec 2021 - Feb 2022",
-      content:
-        "<ul><li>Responsibility-1</li><li>Responsibility-2</li><li>Responsibility-3</li><li>Responsibility-4</li></ul>",
+      content: (
+        <CustomList
+          items={[
+            "Worked on different Machine Algorithms.",
+            "Did analysis of various datasets.",
+            "Made a major project on Students Entrepreneurial Skill Prediction.",
+          ]}
+        />
+      ),
     },
     {
       id: 3,
@@ -37,8 +60,15 @@ const Experiencepage = () => {
       at: "ETG, Pune",
       atUrl: "https://elitetechnogroups.com",
       duration: "Aug 2021 - Sept 2021",
-      content:
-        "<ul><li>Responsibility-1</li><li>Responsibility-2</li><li>Responsibility-3</li><li>Responsibility-4</li></ul>",
+      content: (
+        <CustomList
+          items={[
+            "Learnt basics of Python, Machine Learning.",
+            "Made a minor project on Inventory Management System using Python.",
+            "Made a major project on Fake News Detection and its deployment using Flask.",
+          ]}
+        />
+      ),
     },
     {
       id: 4,
@@ -46,8 +76,15 @@ const Experiencepage = () => {
       at: "Skill Safari, Bangalore",
       atUrl: "https://skillsafari.in",
       duration: "Aug 2020 - Nov 2020",
-      content:
-        "<ul><li>Responsibility-1</li><li>Responsibility-2</li><li>Responsibility-3</li><li>Responsibility-4</li></ul>",
+      content: (
+        <CustomList
+          items={[
+            "Learnt HTML, CSS and JavaScript.",
+            "A front-end framework named Bootstrap 5 was used.",
+            "Made a major project on the clone of PhonePe Website.",
+          ]}
+        />
+      ),
     },
   ]);
 
