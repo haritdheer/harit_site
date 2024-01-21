@@ -14,7 +14,9 @@ const ProfileLayout = ({ children }) => {
       <ProfileNavbar className={"h-1/8"} />
       <CustomContainer className="flex text-white h-7/8">
         <CustomAlert
-          message={"This website is under development. - Kamal S."}
+          message={
+            "This website is currently under development for responsiveness. - Kamal S."
+          }
           type={"danger"}
         />
         <CustomContainer className="w-1/8 overflow-hidden z-10">
