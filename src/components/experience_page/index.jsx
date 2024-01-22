@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PageHeader from "../page_header";
 import CustomTabVertical from "../custom_tab/custom_tab_vertical";
 import CustomList from "../custom_list";
+import CustomTabHorizontal from "../custom_tab/custom_tab_horizontal";
 
 const Experiencepage = () => {
   const [data, setData] = useState([
@@ -95,6 +96,7 @@ const Experiencepage = () => {
       childrenClass={"items-center"}
     >
       <CustomTabVertical tabs={data} />
+      <CustomTabHorizontal tabs={data} />
     </PageHeader>
   );
 };

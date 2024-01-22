@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const CustomTabVertical = ({ tabs = [] }) => {
+const CustomTabHorizontal = ({ tabs = [] }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (tabId) => {
@@ -9,14 +9,14 @@ const CustomTabVertical = ({ tabs = [] }) => {
   };
 
   return (
-    <div className="hidden md:flex">
-      <ul className="flex-col text-sm font-medium md:me-4 mb-4 md:mb-0">
+    <div className="flex-col md:hidden">
+      <ul className="flex text-sm font-medium md:me-4 mb-4 md:mb-0 overflow-scroll">
         {tabs.map((tab) => (
-          <li className="w-max" key={tab.id}>
+          <li className="min-w-max" key={tab.id}>
             <button
               className={`border-l-2 border-l-gray-600 inline-flex items-center px-4 py-4 ${
                 activeTab == tab.id
-                  ? "text-cyan-400 border-l-4 !border-l-cyan-400 bg-gray-600"
+                  ? "text-cyan-400 border-t-4 !border-t-cyan-400 bg-gray-600"
                   : "hover:bg-gray-600 hover:text-cyan-400"
               } w-full`}
               onClick={() => handleTabClick(tab.id)}
@@ -39,11 +39,10 @@ const CustomTabVertical = ({ tabs = [] }) => {
           </Link>
         </h3>
         <p className="mb-2">{tabs[activeTab].duration}</p>
-        {/* <p dangerouslySetInnerHTML={{ __html: tabs[activeTab].content }}></p> */}
         {tabs[activeTab].content}
       </div>
     </div>
   );
 };
 
-export default CustomTabVertical;
+export default CustomTabHorizontal;

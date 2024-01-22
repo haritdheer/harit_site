@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PageHeader from "../page_header";
 import CustomTabVertical from "../custom_tab/custom_tab_vertical";
 import CustomList from "../custom_list";
+import CustomTabHorizontal from "../custom_tab/custom_tab_horizontal";
 
 const Educationpage = () => {
   const [data, setData] = useState([
@@ -59,6 +60,7 @@ const Educationpage = () => {
   return (
     <PageHeader heading="What I've Studied" headingId="03">
       <CustomTabVertical tabs={data} />
+      <CustomTabHorizontal tabs={data} />
     </PageHeader>
   );
 };
