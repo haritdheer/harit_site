@@ -8,6 +8,23 @@ const Educationpage = () => {
   const [data, setData] = useState([
     {
       id: 0,
+      label: "Master of Science (High Integrity Systems)",
+      at: "FraUAS, Frankfurt",
+      atUrl: "https://www.frankfurt-university.de/",
+      duration: "April 2024 - Pursuing",
+      content: (
+        <CustomList
+          items={[
+            "Developed proficiency in programming languages such as [List languages, e.g., Java, C++, Python]",
+            "Collaborated with peers on group projects, fostering teamwork and communication skills",
+            "Applied academic knowledge in a practical setting during internships or work experiences.",
+            "Engaged in relevant extracurricular activities, such as coding competitions, hackathons, or computer science clubs.",
+          ]}
+        />
+      ),
+    },
+    {
+      id: 1,
       label: "Bachelors of Engineering (Computer Engg.)",
       at: "GTU, Ahmedabad",
       atUrl: "https://www.gtu.ac.in",
@@ -24,7 +41,7 @@ const Educationpage = () => {
       ),
     },
     {
-      id: 1,
+      id: 2,
       label: "AISSCE",
       at: "DCHS, Surat",
       atUrl: "https://www.dchs.org.in",
@@ -41,7 +58,7 @@ const Educationpage = () => {
       ),
     },
     {
-      id: 2,
+      id: 3,
       label: "AISSE",
       at: "DCHS, Surat",
       atUrl: "https://www.dchs.org.in",
