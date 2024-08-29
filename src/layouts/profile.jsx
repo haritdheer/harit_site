@@ -13,10 +13,10 @@ const ProfileLayout = ({ children }) => {
       <ParticleBackground />
       <ProfileNavbar className={"h-1/8 z-50"} />
       <CustomContainer className="flex text-white h-7/8">
-        <CustomAlert
+        {/* <CustomAlert
           message={"This website is currently under development."}
           type={"danger"}
-        />
+        /> */}
         <CustomContainer className="hidden md:block md:w-1/8 overflow-hidden z-10">
           <HomepageLeft />
         </CustomContainer>
