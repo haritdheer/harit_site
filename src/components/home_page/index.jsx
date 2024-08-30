@@ -4,8 +4,10 @@ import classNames from "classnames";
 import CustomTypewriter from "../custom_typewriter";
 import CustomButton from "../custom_button/customButton";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Homepage = ({ className }) => {
+  const { t } = useTranslation();
   const [data, setData] = useState({
     name: "Kamal Sharma",
     designation: [
@@ -15,17 +17,19 @@ const Homepage = ({ className }) => {
       "App Developer",
       "Blockchain Developer",
     ],
-    bio: "Hi there! I'm a Full Stack Developer and a Data Science Enthusiast with a passion for creating innovative solutions to complex problems. I've honed my skills in both front-end and back-end development, and have worked with a range of technologies of various domains.",
+    bio: t("homeIntro2"),
   });
   const navigate = useNavigate();
   return (
     <CustomContainer
       className={classNames(className, "flex flex-col gap-y-5 tracking-widest")}
     >
-      <span className="text-sm md:text-md text-cyan-400">Hi, my name is</span>
+      <span className="text-sm md:text-md text-cyan-400">
+        {t("homeIntro1")}
+      </span>
       <h1 className="text-3xl md:text-7xl font-semibold">{data?.name}.</h1>
       <h2 className="text-3xl md:text-7xl font-semibold text-gray-300">
-        I am{" "}
+        {t("homeSubIntro1")}{" "}
         <CustomTypewriter cursor={true} loop={true} words={data?.designation} />
         .
       </h2>
@@ -37,7 +41,7 @@ const Homepage = ({ className }) => {
           navigate("/about");
         }}
         className={"w-max mt-5"}
-        title={"Check out my profile!"}
+        title={t("homeBtn1")}
       />
     </CustomContainer>
   );

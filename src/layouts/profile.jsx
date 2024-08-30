@@ -6,8 +6,16 @@ import HomepageLeft from "../components/homepage_left";
 import CustomAlert from "../components/custom_alert/customAlert";
 import ParticleBackground from "../components/particle_component/particle_background";
 import CustomConsole from "../components/custom_console";
+import CustomButton from "../components/custom_button/customButton";
+import { useTranslation } from "react-i18next";
 
 const ProfileLayout = ({ children }) => {
+  const { i18n } = useTranslation();
+
+  const changeLang = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <CustomContainer className="h-screen w-screen">
       <ParticleBackground />
@@ -26,6 +34,13 @@ const ProfileLayout = ({ children }) => {
         <CustomContainer className="hidden md:block md:w-1/8 overflow-hidden z-10">
           <HomepageRight />
         </CustomContainer>
+        {/* <CustomButton
+          className={
+            "absolute bottom-4 right-4 z-50 hover:!absolute hover:bottom-4 hover:right-4"
+          }
+          title={"German"}
+          onClick={changeLang("de")}
+        /> */}
       </CustomContainer>
       <CustomConsole />
     </CustomContainer>
