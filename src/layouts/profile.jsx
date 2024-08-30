@@ -44,7 +44,7 @@ const ProfileLayout = ({ children }) => {
         </CustomContainer>
         <CustomButtonImage
           className={
-            "border-0 hover:shadow-none absolute bottom-2 right-2 md:bottom-4 md:right-4 z-50 hover:!absolute hover:bottom-4 hover:right-4 w-24 md:w-28"
+            "!border-0 hover:shadow-none absolute bottom-2 right-2 md:bottom-4 md:right-4 z-50 hover:!absolute hover:bottom-4 hover:right-4 w-24 md:w-28"
           }
           img={lang == "en" ? DE : EN}
           onClick={() => {
