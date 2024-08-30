@@ -1,6 +1,9 @@
 {
+    "name": "Kamal Sharma",
     "homeBtn1": "Schauen Sie sich mein Profil an!",
     "homeIntro2": "Hallo! Ich bin ein Full-Stack-Entwickler und ein Data-Science-Enthusiast mit einer Leidenschaft für die Entwicklung innovativer Lösungen für komplexe Probleme. Ich habe meine Fähigkeiten sowohl in der Front-End- als auch in der Back-End-Entwicklung verfeinert und mit einer Reihe von Technologien aus verschiedenen Bereichen gearbeitet.",
     "homeIntro1": "Hallo, mein Name ist",
-    "homeSubIntro1": "Ich bin"
+    "homeSubIntro1": "Ich bin",
+    "designation": "['Full-Stack-Entwickler','Datenwissenschaftler','DevOps-Ingenieur','App-Entwickler','Blockchain-Entwickler']",
+    "navbar": "['Über mich','Erfahrung','Bildung','Kontakt']"
 }

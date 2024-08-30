@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProfileNavbar from "../components/navbar/profileNavbar";
 import CustomContainer from "../containers/customContainer";
 import HomepageRight from "../components/homepage_right";
@@ -7,10 +7,18 @@ import CustomAlert from "../components/custom_alert/customAlert";
 import ParticleBackground from "../components/particle_component/particle_background";
 import CustomConsole from "../components/custom_console";
 import CustomButton from "../components/custom_button/customButton";
+import CustomButtonImage from "../components/custom_button/customButtonImage";
 import { useTranslation } from "react-i18next";
+import EN from "../assets/en-icon.png";
+import DE from "../assets/de-icon.png";
 
 const ProfileLayout = ({ children }) => {
   const { i18n } = useTranslation();
+  const [lang, setLang] = useState(i18n.language);
+
+  useEffect(() => {
+    setLang(i18n.language);
+  }, [i18n.language]);
 
   const changeLang = (lng) => {
     i18n.changeLanguage(lng);
@@ -34,13 +42,15 @@ const ProfileLayout = ({ children }) => {
         <CustomContainer className="hidden md:block md:w-1/8 overflow-hidden z-10">
           <HomepageRight />
         </CustomContainer>
-        {/* <CustomButton
+        <CustomButtonImage
           className={
-            "absolute bottom-4 right-4 z-50 hover:!absolute hover:bottom-4 hover:right-4"
+            "border-0 hover:shadow-none absolute bottom-2 right-2 md:bottom-4 md:right-4 z-50 hover:!absolute hover:bottom-4 hover:right-4 w-24 md:w-28"
           }
-          title={"German"}
-          onClick={changeLang("de")}
-        /> */}
+          img={lang == "en" ? DE : EN}
+          onClick={() => {
+            changeLang(lang == "en" ? "de" : "en");
+          }}
+        />
       </CustomContainer>
       <CustomConsole />
     </CustomContainer>
