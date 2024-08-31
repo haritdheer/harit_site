@@ -5,5 +5,9 @@
     "homeIntro1": "Hi, my name is",
     "homeSubIntro1": "I am",
     "designation": "['Full Stack Developer','Data Scientist','DevOps Engineer','App Developer','Blockchain Developer']",
-    "navbar": "['About','Experience','Education','Contact']"
+    "navbarCompo1": "About",
+    "navbarCompo2": "Experience",
+    "navbarCompo3": "Education",
+    "navbarCompo4": "Contact",
+    "navbarCompo5": "Resume"
 }
