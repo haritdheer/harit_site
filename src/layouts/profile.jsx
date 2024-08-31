@@ -13,7 +13,7 @@ import EN from "../assets/en-icon.png";
 import DE from "../assets/de-icon.png";
 
 const ProfileLayout = ({ children }) => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [lang, setLang] = useState(i18n.language);
 
   useEffect(() => {
@@ -29,10 +29,7 @@ const ProfileLayout = ({ children }) => {
       <ParticleBackground />
       <ProfileNavbar className={"h-1/8 z-50"} />
       <CustomContainer className="flex text-white h-7/8">
-        {/* <CustomAlert
-          message={"This website is currently under development."}
-          type={"danger"}
-        /> */}
+        <CustomAlert message={t("underDevelopmentAlert")} type={"danger"} />
         <CustomContainer className="hidden md:block md:w-1/8 overflow-hidden z-10">
           <HomepageLeft />
         </CustomContainer>
