@@ -3,8 +3,10 @@ import PageHeader from "../page_header";
 import CustomTabVertical from "../custom_tab/custom_tab_vertical";
 import CustomList from "../custom_list";
 import CustomTabHorizontal from "../custom_tab/custom_tab_horizontal";
+import { useTranslation } from "react-i18next";
 
 const Experiencepage = () => {
+  const { t } = useTranslation();
   const [data, setData] = useState([
     {
       id: 0,
@@ -91,7 +93,7 @@ const Experiencepage = () => {
 
   return (
     <PageHeader
-      heading="Where I've Worked"
+      heading={t("experiencePageHeading")}
       headingId="02"
       childrenClass={"items-center"}
     >

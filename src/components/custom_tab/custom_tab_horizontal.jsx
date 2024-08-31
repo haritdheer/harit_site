@@ -28,7 +28,7 @@ const CustomTabHorizontal = ({ tabs = [] }) => {
         ))}
       </ul>
       <div className="px-6 py-2 text-medium text-gray-500 rounded-lg w-full">
-        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+        <h3 className="text-lg font-bold text-white mb-2">
           {tabs[activeTab].label}{" "}
           <Link
             className="text-cyan-400 hover:underline hover:underline-offset-8"

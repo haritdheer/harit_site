@@ -3,8 +3,10 @@ import PageHeader from "../page_header";
 import CustomTabVertical from "../custom_tab/custom_tab_vertical";
 import CustomList from "../custom_list";
 import CustomTabHorizontal from "../custom_tab/custom_tab_horizontal";
+import { useTranslation } from "react-i18next";
 
 const Educationpage = () => {
+  const { t } = useTranslation();
   const [data, setData] = useState([
     {
       id: 0,
@@ -75,7 +77,7 @@ const Educationpage = () => {
     },
   ]);
   return (
-    <PageHeader heading="What I've Studied" headingId="03">
+    <PageHeader heading={t("educationPageHeading")} headingId="03">
       <CustomTabVertical tabs={data} />
       <CustomTabHorizontal tabs={data} />
     </PageHeader>
