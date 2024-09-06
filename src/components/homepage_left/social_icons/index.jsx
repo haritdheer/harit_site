@@ -6,11 +6,11 @@ import CustomLink from "../../custom_link/customLink";
 
 const SocialIcons = () => {
   const [links, setLinks] = useState({
-    github: "https://github.com/kamalbhaiii",
-    instagram: "https://instagram.com/kamalbhaiii",
-    facebook: "https://www.facebook.com/profile.php?id=100003952759515",
-    linkedin: "https://linkedin.com/in/kamalsharma05",
-    snapchat: "https://snapchat.com/add/kamalbhaiii",
+    github: "https://github.com/haritdheer",
+    instagram: "https://instagram.com/harit_dheer",
+    facebook: "https://www.facebook.com/hardikharit.dheer?mibextid=ZbWKwL",
+    linkedin: "https://linkedin.com/in/harit-dheer-612a28203",
+    snapchat: "https://snapchat.com/add/haritdheer2020",
   });
   return (
     <CustomContainer className={"text-2xl flex flex-col gap-y-7"}>

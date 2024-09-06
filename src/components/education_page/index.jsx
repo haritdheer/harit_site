@@ -8,12 +8,29 @@ import { useTranslation } from "react-i18next";
 const Educationpage = () => {
   const { t } = useTranslation();
   const [data, setData] = useState([
+    // {
+    //   id: 0,
+    //   label: "Master of Science (High Integrity Systems)",
+    //   at: "FraUAS, Frankfurt",
+    //   atUrl: "https://www.frankfurt-university.de/",
+    //   duration: "April 2024 - Pursuing",
+    //   content: (
+    //     <CustomList
+    //       items={[
+    //         "Developed proficiency in programming languages such as [List languages, e.g., Java, C++, Python]",
+    //         "Collaborated with peers on group projects, fostering teamwork and communication skills",
+    //         "Applied academic knowledge in a practical setting during internships or work experiences.",
+    //         "Engaged in relevant extracurricular activities, such as coding competitions, hackathons, or computer science clubs.",
+    //       ]}
+    //     />
+    //   ),
+    // },
     {
       id: 0,
-      label: "Master of Science (High Integrity Systems)",
-      at: "FraUAS, Frankfurt",
-      atUrl: "https://www.frankfurt-university.de/",
-      duration: "April 2024 - Pursuing",
+      label: "Bachelors of Engineering (Computer Engg.)",
+      at: "GGSIPU, New Delhi",
+      atUrl: "https://www.ipu.ac.in",
+      duration: "Dec 2020 - June 2024",
       content: (
         <CustomList
           items={[
@@ -27,27 +44,10 @@ const Educationpage = () => {
     },
     {
       id: 1,
-      label: "Bachelors of Engineering (Computer Engg.)",
-      at: "GTU, Ahmedabad",
-      atUrl: "https://www.gtu.ac.in",
-      duration: "Aug 2019 - June 2023",
-      content: (
-        <CustomList
-          items={[
-            "Developed proficiency in programming languages such as [List languages, e.g., Java, C++, Python]",
-            "Collaborated with peers on group projects, fostering teamwork and communication skills",
-            "Applied academic knowledge in a practical setting during internships or work experiences.",
-            "Engaged in relevant extracurricular activities, such as coding competitions, hackathons, or computer science clubs.",
-          ]}
-        />
-      ),
-    },
-    {
-      id: 2,
-      label: "AISSCE",
-      at: "DCHS, Surat",
-      atUrl: "https://www.dchs.org.in",
-      duration: "Mar 2018 - Apr 2019",
+      label: "HSC",
+      at: "DPS, Bikaner",
+      atUrl: "http://dpisbikaner.com/",
+      duration: "Mar 2018 - Apr 2020",
       content: (
         <CustomList
           items={[
@@ -60,11 +60,11 @@ const Educationpage = () => {
       ),
     },
     {
-      id: 3,
-      label: "AISSE",
-      at: "DCHS, Surat",
-      atUrl: "https://www.dchs.org.in",
-      duration: "Mar 2016 - Apr 2017",
+      id: 2,
+      label: "SSC",
+      at: "RSV, Bikaner",
+      atUrl: "https://rsvschool.com/",
+      duration: "Mar 2016 - Apr 2018",
       content: (
         <CustomList
           items={[

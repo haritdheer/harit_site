@@ -10,10 +10,26 @@ const Experiencepage = () => {
   const [data, setData] = useState([
     {
       id: 0,
+      label: "AI Specialist Contractual",
+      at: "Pikkles, Japan",
+      atUrl: "https://pikkles.com/en/",
+      duration: "July 2024 - Present",
+      content: (
+        <CustomList
+          items={[
+            "Developing and fine-tuning AI models for real-time data analysis and decision-making",
+            "Implemented machine learning algorithms and deep learning techniques for various AI-driven applications",
+            "Currently optimizing neural networks and designing custom AI solutions for diverse client projects.",
+          ]}
+        />
+      ),
+    },
+    {
+      id: 1,
       label: "Software Developer Intern",
       at: "Modgenics, Hyderabad",
       atUrl: "https://www.modgenics.co",
-      duration: "Feb 2023 - Sept 2023",
+      duration: "July 2023 - June 2024",
       content: (
         <CustomList
           items={[
@@ -25,12 +41,13 @@ const Experiencepage = () => {
         />
       ),
     },
+    
     {
-      id: 1,
-      label: "Software Developer Associate",
-      at: "Blackcoffer, New Delhi",
-      atUrl: "https://blackcoffer.com",
-      duration: "July 2022 - Dec 2022",
+      id: 2,
+      label: "Full Stack Developer Intern",
+      at: "CCBUL India, Bangalore",
+      atUrl: "https://ccbul.com",
+      duration: "June 2022 - Sep 2022",
       content: (
         <CustomList
           items={[
@@ -42,53 +59,22 @@ const Experiencepage = () => {
       ),
     },
     {
-      id: 2,
-      label: "Data Science and Analytics Intern",
-      at: "DevTown, Bangalore",
-      atUrl: "https://devtown.in",
-      duration: "Dec 2021 - Feb 2022",
-      content: (
-        <CustomList
-          items={[
-            "Worked on different Machine Algorithms.",
-            "Did analysis of various datasets.",
-            "Made a major project on Students Entrepreneurial Skill Prediction.",
-          ]}
-        />
-      ),
-    },
-    {
       id: 3,
-      label: "AI / ML Intern",
-      at: "ETG, Pune",
-      atUrl: "https://elitetechnogroups.com",
+      label: "Frontend Developer",
+      at: "Pepcoding, Noida",
+      atUrl: "https://pepcoding.com",
       duration: "Aug 2021 - Sept 2021",
       content: (
         <CustomList
           items={[
-            "Learnt basics of Python, Machine Learning.",
-            "Made a minor project on Inventory Management System using Python.",
-            "Made a major project on Fake News Detection and its deployment using Flask.",
+            "Creating responsive, user-friendly web interfaces using React.js and modern front-end technologies",
+            "Collaborating with design teams to implement visually appealing and intuitive UI/UX components.",
+            "Currently enhancing application performance and maintaining code quality through state management and optimization techniques.",
           ]}
         />
       ),
     },
-    {
-      id: 4,
-      label: "Frontend Developer Intern",
-      at: "Skill Safari, Bangalore",
-      atUrl: "https://skillsafari.in",
-      duration: "Aug 2020 - Nov 2020",
-      content: (
-        <CustomList
-          items={[
-            "Learnt HTML, CSS and JavaScript.",
-            "A front-end framework named Bootstrap 5 was used.",
-            "Made a major project on the clone of PhonePe Website.",
-          ]}
-        />
-      ),
-    },
+   
   ]);
 
   return (

@@ -6,10 +6,10 @@ const EmailLink = () => {
   return (
     <CustomContainer className={"rotate-90 tracking-widest"}>
       <CustomLink
-        to={"mailto:coding.coding.everyday@gmail.com"}
+        to={"mailto:haritdheer@gmail.com"}
         className={"hover:right-2 hover:!bottom-0"}
       >
-        coding.coding.everyday@gmail.com
+        haritdheer@gmail.com
       </CustomLink>
     </CustomContainer>
   );

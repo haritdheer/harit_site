@@ -5,7 +5,7 @@ import CustomButtonAnchor from "../custom_button/customButtonAnchor";
 import { useTranslation } from "react-i18next";
 
 const Contactpage = () => {
-  const [mail, setMail] = useState("coding.coding.everyday@gmail.com");
+  const [mail, setMail] = useState("haritdheer@gmail.com");
   const { t } = useTranslation();
   return (
     <PageHeader
