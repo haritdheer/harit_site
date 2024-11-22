@@ -10,6 +10,22 @@ const Experiencepage = () => {
   const [data, setData] = useState([
     {
       id: 0,
+      label: "Software Developer 1",
+      at: "THB, India",
+      atUrl: "https://thb.group/",
+      duration: "Oct 2024 - Present",
+      content: (
+        <CustomList
+          items={[
+            "I design and develop end-to-end web applications, implement dynamic user interfaces",
+            "Build efficient backend services with Node.js. I focus on optimizing performance, integrating APIs",
+            "delivering custom solutions tailored to diverse client needs.",
+          ]}
+        />
+      ),
+    },
+    {
+      id: 1,
       label: "AI Specialist Contractual",
       at: "Pikkles, Japan",
       atUrl: "https://pikkles.com/en/",
@@ -25,7 +41,7 @@ const Experiencepage = () => {
       ),
     },
     {
-      id: 1,
+      id: 2,
       label: "Software Developer Intern",
       at: "Modgenics, Hyderabad",
       atUrl: "https://www.modgenics.co",
@@ -43,7 +59,7 @@ const Experiencepage = () => {
     },
     
     {
-      id: 2,
+      id: 3,
       label: "Full Stack Developer Intern",
       at: "CCBUL India, Bangalore",
       atUrl: "https://ccbul.com",
@@ -59,7 +75,7 @@ const Experiencepage = () => {
       ),
     },
     {
-      id: 3,
+      id: 4,
       label: "Frontend Developer",
       at: "Pepcoding, Noida",
       atUrl: "https://pepcoding.com",
